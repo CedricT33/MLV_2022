@@ -15,7 +15,7 @@ require('dotenv/config');
 
 //-----CONFIG-----//
 const corsOptions = {
-    origin: 'http://localhost:5000', // TODO à changer
+    origin: process.env.FRONT_URL,
     credentials: true
 }
 const loggerOption = '[:date] -> :method :url :status - :response-time ms - :res[content-length]';
@@ -45,7 +45,7 @@ mongoose.connect(
     }).catch( error => console.log('[ERROR -> BDD NON CONNECTE] : ', error)
 );
 
-//-----PORT DU SERVEUR-----//
+// -----PORT DU SERVEUR-----//
 app.listen(3000, () => {
-    console.log('Listening on localhost:3000');
+    // console.log('Listening on localhost:3000');
 });

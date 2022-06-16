@@ -762,6 +762,13 @@ form #envoyer:hover
     flex-direction: column;
     justify-content: space-evenly;
 }
+#Slide5 aside p {
+    display: flex;
+    flex-direction: column;
+}
+#Slide5 aside p span {
+    font-weight: bold;
+}
 #Slide5 > div:nth-of-type(2) {
     width: 60vw;
     height: 40vw;

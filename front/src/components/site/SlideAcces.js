@@ -15,14 +15,9 @@ export default function SlideAcces() {
         loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
       </div>
       <aside>
-        <p>Lorem ipsum dolor sit amet,
-          consectetur adipiscing elit,
-          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          Ut enim ad minim veniam, quis nostrud exercitation ullamco
-          laboris nisi ut aliquip ex ea commodo consequat.</p>
-        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-          dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-          sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>La rue de la Briqueterie est la rue qui passe derrière l'école. Il faut aller toujours tout droit jusqu'à entrer dans la cour.
+          Le bâtiment se situera sur votre droite après le portail vert.</p>
+        <p><span>Attention !</span>Merci de prendre rendez-vous avant toute visite.</p>
       </aside>
     </div>
   );

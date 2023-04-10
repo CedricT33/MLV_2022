@@ -21,6 +21,7 @@ export default function SlideRecap() {
       <div className="tel">
         <div><span>Tel</span> : 03.44.42.35.69</div>
         <div><span>Portable</span> : 06.61.40.30.75</div>
+        <div><span>E mail</span> : maglv@free.fr</div>
       </div>
     </div>
   );

@@ -9,7 +9,10 @@ export default function SlidePhotos({donnees}) {
   const slidesPhotos = photosTriees?.map(photo => {
     return (
       <SwiperSlide key={photo._id}>
-        <div><img alt={photo.nom} src={photo.url} /></div>
+        <div>
+          <h2>{photo.nom}</h2>
+          <div><img alt={photo.nom} src={photo.url} /></div>
+        </div>
       </SwiperSlide>
     )
   });

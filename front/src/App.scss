@@ -469,7 +469,11 @@ span {
 }
 #Slide2 .swiper-pagination {
     display: none;
-} 
+}
+
+.swiper-pagination-bullet {
+    margin-bottom: 7px;
+}
 
 #infoPrix {
     display: flex;
@@ -563,6 +567,9 @@ span {
     font-family: "montserratL";
     font-size: 1vw;
     margin-left: 0.4vw;
+    background: white;
+    z-index: 10;
+    padding-right: 10px;
 }
 .swiper-slide .description {
     margin-top: 1vh;
@@ -599,12 +606,26 @@ span {
 #Slide3 .swiper-slide {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
-#Slide3 .swiper-slide > div {
+#Slide3 .swiper-slide div:first-child {
+    position: relative;
+    height: auto;
+}
+#Slide3 .swiper-slide h2 {
+    position: absolute;
+    top: -35px;
+    font-size: 30px;
+    left: 0;
+    margin: 0;
+    z-index: 10;
+}
+#Slide3 .swiper-slide div > div {
     padding: 0px;
     margin: 0px auto;
     width: 70vw;
-    height: 40vw;
+    height: auto;
+    max-height: 45vw;
     position: relative;
     overflow: hidden;
     border: 1px solid #000;
@@ -1018,6 +1039,9 @@ footer {
     width: 100%;
 }
 
+.bouton-classement {
+    cursor: pointer;
+}
 
 
 // --- GRANDS ECRANS ---
@@ -1360,7 +1384,7 @@ footer {
     }
     #Slide2 .swiper-pagination {
         display: block;
-        bottom: 6% !important;
+        bottom: 5% !important;
         padding: 0 10vw;
     } 
     #infoPrix {
@@ -1394,12 +1418,13 @@ footer {
         z-index: 15;
     }
     #Slide3 .swiper-pagination {
-        bottom: 18.5% !important;
+        bottom: 16% !important;
         padding: 0 10vw;
     }
-    #Slide3 .swiper-slide > div {
+    #Slide3 .swiper-slide div > div {
         width: 95vw;
-        height: 60vw;
+        height: auto;
+        max-height: 60vw;
     }
 
     // --- Slide4 ---

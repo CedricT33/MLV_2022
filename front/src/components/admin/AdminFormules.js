@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import useAuth from "../../hooks/useAuth";
 import useDataContext from '../../hooks/useDataContext';
 import { loader } from "../../services/LoaderService";
+import { trierColonne } from "../utils/Utils";
 
 export default function AdminFormules() {
     const { auth } = useAuth();
@@ -84,7 +85,7 @@ export default function AdminFormules() {
                     <thead>
                         <tr>
                             <th className="table-secondary"></th>
-                            <th className="table-secondary">Ordre</th>
+                            <th className="table-secondary bouton-classement" onClick={() => trierColonne(formules, setFormules, "ordre_affichage")}>Ordre</th>
                             <th className="table-secondary">Nom</th>
                             <th className="table-secondary">Description</th>
                             <th className="table-secondary">Prix HT</th>

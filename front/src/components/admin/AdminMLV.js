@@ -9,9 +9,9 @@ export default function AdminMLV() {
 
     return (
         <>
-        <main className="d-flex flex-column vh-100">
+        <main className="d-flex flex-column vh-100 bg-light">
             <AdminHeader />
-            <main className="admin-main bg-light h-100">
+            <main className="admin-main bg-light">
                 <DataProvider >
                     <Outlet />
                 </DataProvider>

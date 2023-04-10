@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import useAuth from "../../hooks/useAuth";
 import useDataContext from '../../hooks/useDataContext';
 import { loader } from "../../services/LoaderService";
+import { trierColonne } from "../utils/Utils";
 
 export default function AdminCGs() {
     const { auth } = useAuth();
@@ -82,7 +83,7 @@ export default function AdminCGs() {
                     <thead>
                         <tr>
                             <th className="table-secondary"></th>
-                            <th className="table-secondary">Ordre</th>
+                            <th className="table-secondary bouton-classement" onClick={() => trierColonne(cgs, setCgs, "ordre_affichage")}>Ordre</th>
                             <th className="table-secondary">Titre</th>
                             <th className="table-secondary">Paragraphe</th>
                         </tr>

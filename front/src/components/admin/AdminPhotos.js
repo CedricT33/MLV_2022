@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import useAuth from "../../hooks/useAuth";
 import useDataContext from '../../hooks/useDataContext';
 import { loader } from "../../services/LoaderService";
+import { trierColonne } from "../utils/Utils";
 
 export default function AdminPhotos() {
     const { auth } = useAuth();
@@ -83,7 +84,7 @@ export default function AdminPhotos() {
                     <thead>
                         <tr>
                             <th className="table-secondary"></th>
-                            <th className="table-secondary">Ordre</th>
+                            <th className="table-secondary bouton-classement" onClick={() => trierColonne(photos, setPhotos, "ordre_affichage")}>Ordre</th>
                             <th className="table-secondary">Nom</th>
                             <th className="table-secondary">URL (adresse du lien vers la photo)</th>
                         </tr>
